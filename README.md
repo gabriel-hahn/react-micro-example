@@ -2,6 +2,8 @@
 
 Example of micro services infrastructure for Angular applications
 
+The structure was splitted between [NPM](https://www.npmjs.com) packages. With this approach, we can split the project on main modules and wrapping everything that is important for it, looking for a better infrastructure and CI/CD.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
