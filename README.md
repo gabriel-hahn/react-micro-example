@@ -1,6 +1,6 @@
-# Angular Micro Project Example
+# React Micro Project Example
 
-Example of micro services infrastructure for Angular applications
+Example of micro services infrastructure for React applications
 
 The structure was splitted between [NPM](https://www.npmjs.com) packages. With this approach, we can split the project on main modules and wrapping everything that is important for it, looking for a better infrastructure and CI/CD.
 
