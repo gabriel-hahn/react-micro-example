@@ -1,8 +1,18 @@
 # React Micro Project Example
 
-Example of micro services infrastructure for React applications
+Example of microservices infrastructure for React applications. In this project we have three examples:
 
-The structure was splitted between [NPM](https://www.npmjs.com) packages. With this approach, we can split the project on main modules and wrapping everything that is important for it, looking for a better infrastructure and CI/CD.
+- NPM based:
+
+The structure was splitted between [NPM](https://www.npmjs.com) packages. With this approach, we can split the project on main modules and wrapping everything that is important for it, looking for a better way of handle packages versioning and reusing code.
+
+- Monorepo based project.
+
+As monorepo, we can use different projects on the same repository. This approach is a good way of deploy different versions of the application at the same time, manage dependencies and a better way of have different projects running together and easier to debug.
+
+- Micro services based on routes.
+
+Completly different repositories, running together based on routes. This is a good approach to have different teams working with different parts of the project and separeted deploys (more scalable), but not so good if you need to run all together to debug :)
 
 ## Contributing
 
