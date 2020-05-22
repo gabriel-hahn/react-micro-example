@@ -2,15 +2,15 @@
 
 Example of micro frontends infrastructure for React applications. In this project we have three examples:
 
-- NPM based:
+### NPM based:
 
 The structure was splitted between [NPM](https://www.npmjs.com) packages. With this approach, we can split the project on main modules and wrapping everything that is important for it, looking for a better way of handle packages versioning and reusing code.
 
-- Monorepo based project.
+### Monorepo based project.
 
 As monorepo, we can use different projects on the same repository. This approach is a good way of deploy different versions of the application at the same time, manage dependencies and a better way of have different projects running together and easier to debug, but in the end we are running a project in the same repository which also have downsides.
 
-- Micro frontends based on routes (several repositories).
+### Micro frontends based on routes (several repositories).
 
 Completly different repositories, running together based on routes. This is a good approach to have different teams working on several parts of the project and separeted deploys (more scalable), but not so good if you need to run all together to debug :)
 
