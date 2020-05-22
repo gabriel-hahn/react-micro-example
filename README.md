@@ -1,6 +1,9 @@
 # React Micro Frontends examples
 
-Example of micro frontends infrastructure for React applications. In this project we have three examples:
+Example of micro frontends infrastructure for React applications.
+
+Currently, several companies around the world are using micro frontends as an alternative to scale the front-end part of the project and facilitate the division between teams, maintain or avoid problems that a monolith may have when it gets bigger.
+Micro frontends is a broad concept, but it basically divides the front-end project into several parts and we have a few concepts to do that:
 
 ### NPM based:
 
