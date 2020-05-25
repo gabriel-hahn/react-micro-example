@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+window.renderCheckout = (containerId, history) => {
+  ReactDOM.render(<App history={history} />, document.getElementById(containerId));
+};
+
+window.unmountCheckout = containerId => {
+  ReactDOM.unmountComponentAtNode(document.getElementById(containerId));
+};

@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 const MicroFrontendLoader = ({ history, name, host }) => {
   const renderMicroFrontend = () => {
     window[`render${name}`](`${name}-container`, history);
-    // E.g.: window.renderBrowse('browse-container', history);
   };
 
   useEffect(() => {
@@ -18,11 +17,14 @@ const MicroFrontendLoader = ({ history, name, host }) => {
       .then(res => res.json())
       .then(manifest => {
         const script = document.createElement('script');
+
         script.id = scriptId;
         script.src = `${host}${manifest['main.js']}`;
         script.onload = renderMicroFrontend;
+
         document.head.appendChild(script);
-      });
+      })
+      .catch(err => console.error('Error on load micro: ', err));
 
     return () => {
       window[`unmount${name}`](`${name}-container`);

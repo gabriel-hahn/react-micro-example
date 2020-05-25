@@ -7,13 +7,11 @@ import MicroFrontendLoader from '../components/MicroFrontendLoader';
 import Welcome from '../pages/Welcome';
 
 const Checkout = ({ history }) => (
-  // <MicroFrontendLoader history={history} name="Checkout" host={browseHost} />
-  <MicroFrontendLoader history={history} name="Checkout" />
+  <MicroFrontendLoader history={history} name="Checkout" host="http://localhost:3030" />
 );
 
 const Markeplace = ({ history }) => (
-  // <MicroFrontendLoader history={history} name="Marketplace" host={restaurantHost} />
-  <MicroFrontendLoader history={history} name="Marketplace" />
+  <MicroFrontendLoader history={history} name="Marketplace" host="http://localhost:3333" />
 );
 
 const Routes = () => (
