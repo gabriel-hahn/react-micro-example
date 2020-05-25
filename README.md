@@ -10,6 +10,8 @@ Micro frontends is a broad concept, but it basically divides the front-end proje
 Completly different repositories, running together based on routes. This is a good approach to have different teams working on several parts of the project and separeted deploys (more scalable).
 The problem is debugging this kind of application :sweat_smile:
 
+Checkout and Marketplace are split projects with their own package.json and structure. This root project will be the wrapper around it, the application which will handle the load of each project separatelly.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
