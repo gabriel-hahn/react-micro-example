@@ -18,4 +18,4 @@ _reactDom2.default.render(_react2.default.createElement(
   _react2.default.StrictMode,
   null,
   _react2.default.createElement(_App2.default, null)
-), document.getElementById('root'));
+), document.getElementById('header-container'));

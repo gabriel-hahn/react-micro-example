@@ -3,12 +3,12 @@
 Example of micro frontends infrastructure for React applications.
 
 Currently, several companies around the world are using micro frontends as an alternative to scale the front-end part of the project and facilitate the division between teams, maintain or avoid problems that a monolith may have when it gets bigger.
-Micro frontends is a broad concept, but it basically divides the front-end project into several parts and run all together, commoly split in routes.
+Micro frontends is a broad concept, but it basically divides the front-end project into several parts and run all together, commoly split in routes or different projects in the same page.
 
 ## The concept of this repository
 
-Completly different repositories, running together based on routes. This is a good approach to have different teams working on several parts of the project and separeted deploys (more scalable).
-The problem is debugging this kind of application :sweat_smile:
+This repository approach is using Back-end to fetch our Front-end projects and run all together (same page).
+Actually, there are some approaches you can take such as iFrames (easy and works well with embeded projects, for example), load each project based on the routes (I think it is the common way of implement micro frontends) and etc. But, here is just a simple example to show how to run different projects in the same page which can be usefull in some cases such as a big e-commerce.
 
 ## Contributing
 
