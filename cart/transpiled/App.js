@@ -10,12 +10,21 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function App() {
+var App = function App() {
   return _react2.default.createElement(
-    'header',
+    'section',
     null,
-    'Cart'
+    _react2.default.createElement(
+      'h2',
+      null,
+      'Cart'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'Your cart is empty'
+    )
   );
-}
+};
 
 exports.default = App;

@@ -1,11 +1,10 @@
 import React from 'react';
 
-function App() {
-  return (
-    <header>
-      Cart
-    </header>
-  );
-}
+const App = () => (
+  <section>
+    <h2>Cart</h2>
+    <p>Your cart is empty</p>
+  </section>
+);
 
 export default App;
