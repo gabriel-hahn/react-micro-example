@@ -17,11 +17,11 @@ const Markeplace = ({ history }) => (
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Suspense fallback={<Loading />}>
+      {/* <Suspense fallback={<Loading />}> */}
         <Route exact path="/" component={Welcome} />
         <Route path="/checkout/:id" component={Checkout} />
         <Route path="/marketplace" component={Markeplace} />
-      </Suspense>
+      {/* </Suspense> */}
     </Switch>
   </BrowserRouter>
 );
