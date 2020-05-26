@@ -15,19 +15,33 @@ const styles = {
   }
 };
 
-const App = () => (
-  <section>
-    <h2>Products</h2>
-    <ul style={styles.productsList}>
-      { productsItemsArr.map((product) => (
-        <li style={styles.product}>
-          <b>{product}</b> <br />
-          $ {(Math.random() * 100).toFixed(2)} <br />
-          <button>Buy</button>
-        </li>
-      )) }
-    </ul>
-  </section>
-);
+const App = () => {
+  const addToCart = (item) => () => {
+    const event = new CustomEvent('addToCart', { detail: item });
+
+    window.dispatchEvent(event);
+  }
+
+  const productItemView = (product, index) => {
+    const price = parseFloat((Math.random() * 100).toFixed(2));
+
+    return (
+      <li key={index} style={styles.product}>
+        <b>{product}</b> <br />
+        $ {price} <br />
+        <button onClick={addToCart({ product, price })}>Buy</button>
+      </li>
+    );
+  };
+
+  return (
+    <section>
+      <h2>Products</h2>
+      <ul style={styles.productsList}>
+        { productsItemsArr.map(productItemView) }
+      </ul>
+    </section>
+  );
+};
 
 export default App;
