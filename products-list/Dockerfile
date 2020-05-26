@@ -4,7 +4,7 @@ COPY package.json .
 RUN npm install
 COPY . .
 
-ENV PUBLIC_URL https://microfrontends-product-gabriel.herokuapp.com
+ENV PUBLIC_URL https://microfrontends-gabriel.herokuapp.com/products-list
 
 RUN npm run build
 RUN npm run transpile
