@@ -8,7 +8,16 @@ Micro frontends is a broad concept, but it basically divides the front-end proje
 ## The concept of this repository
 
 This repository approach is using Back-end to fetch our Front-end projects and run all together (same page).
-Actually, there are some approaches you can take such as iFrames (easy and works well with embeded projects, for example), load each project based on the routes (I think it is the common way of implement micro frontends) and etc. But, here is just a simple example to show how to run different projects in the same page which can be usefull in some cases such as a big e-commerce.
+Actually, there are some approaches you can take such as iFrames (easy and works well with embeded projects, for example), load each project based on the routes (I think it is the common way of implement micro frontends) and etc. But, here it's just a example to show how to run different projects in the same page which can be usefull in some cases such as a big e-commerce.
+
+## Getting Started
+
+...
+
+## Demo
+
+You can access the project [here](LINK).
+It might takes a while to load because heroku dynos go to sleep (free dynos).
 
 ## Contributing
 
