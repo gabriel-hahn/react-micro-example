@@ -16,7 +16,7 @@ CustomEvents is being used to communicate the projects.
 ## Demo
 
 You can access the project [here](https://microfrontends-gabriel.herokuapp.com/).
-It might takes a while to load because heroku dynos go to sleep (free dynos).
+It might takes a while to load because heroku dynos are sleeping (free dynos).
 
 ## Authors
 
